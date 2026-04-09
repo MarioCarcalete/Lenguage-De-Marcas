@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3</title>
+  <style>
+    * {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-sizing: border-box;
+    }
+
+    form {
+      width: 450px;
+      border: 1px solid;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    div {
+      padding: 5px;
+      margin: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border-radius: 5px;
+      padding: 6px;
+      border: 1px solid #999;
+    }
+
+    input, select {
+      height: 35px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    button {
+      color: white;
+      border-color: #0c8f1b;
+      border-radius: 5px;
+      background-color: #0c8f1b;
+      padding: 10px;
+      margin: 10px;
+      width: 90%;
+      cursor: pointer;
+    }
+
+    #error {
+      display: none;
+      color: rgb(237, 68, 68);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulario de contacto</h1>
+
+  <form name="form1" onsubmit="return validar();">
+    <h2 style="color: #058614;">Formulario de contacto</h2>
+
+    <div>
+      <label for="nombre">Nombre *</label>
+      <input type="text" name="nombre" id="nombre">
+    </div>
+
+    <div>
+      <label for="email">Email *</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div>
+      <label for="asunto">Asunto *</label>
+   <select name="asunto" id="asunto" onchange="mostrarSolicitud()">
+  <option value="">Selecciona una opción</option>
+  <option value="info">Pedir información</option>
+  <option value="estado">Estado de una solicitud</option>
+  <option value="otros">Otros</option>
+</select>
+    </div>
+
+    <div id="bloqueSolicitud" style="display: none;">
+  <label for="numSolicitud">Número de solicitud *</label>
+  <input type="text" id="numSolicitud" placeholder="Escribe el nº de solicitud" style="border: 2px solid red;">
+</div>
+
+    <div>
+      <label for="mensaje">Mensaje *</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+    </div>
+
+    <div>
+      <span id="error">Algunos campos no son correctos, revísalos</span>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="FormularioWeb.js"></script>
+</body>
+</html>
