@@ -1,0 +1,12 @@
+# Editores
+.vscode/
+.idea/
+
+# Dependencias y builds (por si se añade npm)
+node_modules/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*~
