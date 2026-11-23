@@ -8,25 +8,25 @@ Ejercicios de la asignatura **Lenguajes de Marcas** de DAM: formularios web con 
 
 ## 📝 Ejercicios
 
-| Ejercicio | Carpeta | Qué hace |
+| Ejercicio | Archivos | Qué hace |
 |---|---|---|
-| Formulario de registro | [`formulario-registro/`](formulario-registro) | Comprueba que no haya campos vacíos, que las dos contraseñas coincidan y que se acepten las condiciones antes de enviar |
-| Formulario de contacto | [`formulario-contacto/`](formulario-contacto) | Valida los campos obligatorios y muestra un campo extra (número de solicitud) solo cuando el asunto lo necesita |
+| Formulario de registro | [`FormularioJS.html`](FormularioJS.html) · [`FormularioJs.js`](FormularioJs.js) | Comprueba que no haya campos vacíos, que las dos contraseñas coincidan y que se acepten las condiciones antes de enviar |
+| Formulario de contacto | [`FormularioWeb.html`](FormularioWeb.html) · [`FormularioWeb.js`](FormularioWeb.js) | Valida los campos obligatorios y muestra un campo extra (número de solicitud) solo cuando el asunto lo necesita |
 
-La carpeta [`apuntes/`](apuntes) tiene los enunciados y apuntes de JavaScript (arrays, DOM y validación de formularios) en los que se basan los ejercicios.
+Los PDF de la raíz del repo son los enunciados y apuntes de JavaScript (arrays, DOM y validación de formularios) en los que se basan los ejercicios.
 
 ## 🗂️ Estructura
 
 ```
-├── formulario-registro/   HTML + JS del formulario de registro
-├── formulario-contacto/   HTML + JS del formulario de contacto
-└── apuntes/               Enunciados y apuntes en PDF
+├── FormularioJS.html / FormularioJs.js     Formulario de registro
+├── FormularioWeb.html / FormularioWeb.js   Formulario de contacto
+└── *.pdf                                   Enunciados y apuntes
 ```
 
 ## ▶️ Cómo probarlo
 
-1. Clona el repo: `git clone https://github.com/MarioCarcalete/Lenguage-De-Marcas.git`
-2. Abre el `.html` de cualquiera de las dos carpetas en el navegador (o con la extensión *Live Preview* de VS Code).
+1. Clona el repo: `git clone https://github.com/MarioCarcalete/Lenguaje-De-Marcas.git`
+2. Abre cualquiera de los dos `.html` en el navegador (o con la extensión *Live Preview* de VS Code).
 
 ---
 
